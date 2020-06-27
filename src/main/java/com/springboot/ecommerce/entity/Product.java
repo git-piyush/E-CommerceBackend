@@ -18,9 +18,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 import lombok.Data;
 
 
-
-
-
 @Entity
 @Table(name="product")
 @Data
