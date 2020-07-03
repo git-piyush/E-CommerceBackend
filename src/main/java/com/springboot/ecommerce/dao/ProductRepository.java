@@ -22,4 +22,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	//@Query(value = "select * from product where name like %:name%",nativeQuery=true)
 	//Page<Product> findByNameContaining(@RequestParam("name") String name, Pageable pageable);
 	
+	Page<Product> findById(@RequestParam("id") Long id, Pageable pageable);  //
+	//or
+	//@Query(value = "select * from product where category_id = :id",nativeQuery = true)
+	//Page<Product> findById(@RequestParam("id") Long id, Pageable pageable);
+	
 }
